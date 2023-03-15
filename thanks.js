@@ -27,7 +27,7 @@ function validateOTP() {
     otpError.textContent = "The OTP must be a 4-digit number.";
     return false;
   } else {
-    otpError.textContent = "";
+    otpError.textContent = "Valid OTP";
     return true;
   }
 }
