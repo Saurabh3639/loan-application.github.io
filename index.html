@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Application</title>
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">LOAN24/7</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <div style="text-align:center">Call Us Now</div>
+                    <div>+91 9876543210</div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section1">
+        <div class="background-image"></div>
+        <div class="content">
+            <h1>Looking for a Loan?</h1>
+            <p>Flexible loans for any situation</p>
+            <a href="#formsection" class="button">Apply for Loan</a>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div id="formsection">
+            <form action="thanks.html" method="get">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="First Name  Last name" required>
+                <br />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email ID" required>
+                <br />
+
+                <label for="pan">PAN:</label>
+                <input type="text" id="pan" name="pan" placeholder="PAN" pattern="[a-zA-Z]{5}[0-9]{4}[a-zA-Z]{1}$" minlength="10" maxlength="10"
+                    style="text-transform: uppercase" required>
+                <br />
+
+                <label for="loan-amount">Loan Amount:</label>
+                <input type="number" id="loan-amount" name="loan-amount" placeholder="Loan Amount" max="999999999" required>
+                <span id="amount-in-words" style="text-transform: capitalize;"></span>
+                <br />
+
+                <label for="answer">What is the result of:</label>
+                <span id="captcha"></span>
+                <input type="number" id="answer" name="answer" placeholder="answer" required>
+                <button type="button" id="new-captcha">New Captcha</button>
+                <br />
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>LOAN24/7</h3>
+                <p>123 Main Street<br>City, State ZIP</p>
+                <p>Phone: (123) 456-7890<br>Email: info@loan.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+            <p>&copy; 2023 LOAN24/7. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
