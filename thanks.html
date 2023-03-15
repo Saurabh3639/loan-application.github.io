@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks Page</title>
+    <link rel="stylesheet" href="thanks.css" />
+</head>
+
+<body>
+    <div class="thanks-img">
+        <img src="images/thank-you.png" alt="Thank You" id="thankyou" />
+    </div>
+    <div class="container">
+        <div>
+            Dear <span id="firstname"></span>,
+        </div>
+        <div>
+            Thank you for your inquiry. A 4 digit verification number has been sent to your email: <span id="youremail"></span>, please
+            enter it in the following box and submit for confirmation.
+        </div>
+
+        <form onsubmit="return submitForm()">
+            <div class="form-group">
+                <label for="otp">OTP</label>
+                <input type="number" id="otp" name="otp" placeholder="0000" max="9999" required>
+                <div id="otp-error" class="error-message"></div>
+                <button type="button" onclick="validateOTP()" id="validate-btn">Validate</button>
+                <div>
+                    <a href="#">Resend OTP</a>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="back-btn">
+        <button type="button"><a href="index.html" id="backbtn-link">&#8592; Back</a></button>
+    </div>
+    <script src="thanks.js"></script>
+</body>
+
+</html>
